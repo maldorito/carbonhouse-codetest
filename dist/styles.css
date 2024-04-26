@@ -1,0 +1,13 @@
+body {
+  background-color: #fff;
+  font-family: Oswald, Merriweather, Lato;
+}
+body h1 {
+  text-transform: uppercase;
+}
+body .header .menu-bar {
+  background-color: #101920;
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
