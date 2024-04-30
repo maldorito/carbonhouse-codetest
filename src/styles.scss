@@ -108,9 +108,10 @@ body {
             height: 5.9375rem;
             padding-left: 4.5625rem;
             padding-right: 8.7263rem;
+            margin-bottom: 3.5rem;
 
             img:hover {
-                box-shadow: #101920;
+                //box-shadow: #fff;
             }
 
             a { 
@@ -130,25 +131,214 @@ body {
     }
 
     .content {
-
         margin: 0 3.5rem;
 
-        .upcoming-events-bar {
+        &.grid-view {
 
+        }
+
+        &.list-view {
+
+        }
+
+        .upcoming-events-bar {
             display: flex;
-            align-items: center;
+            //align-items: center;
             justify-content: space-between;
 
-            h1 {
-                color: #101920;
-                text-transform: uppercase;
-                font-size: 3rem;
-                font-weight: 600;
-                letter-spacing: .0375rem;
+            .events-bar-title {
+                justify-self: flex-start;
+
+                h1 {
+                    color: #101920;
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    letter-spacing: .0375rem;
+                    justify-self: flex-start;
+                    margin: 0;
+                }
+            }
+
+            .events-bar-buttons {
+                display: flex;
+                align-items: center;
+                justify-self: flex-end;
+
+                .events-bar-button {
+                    display: flex;
+                    padding: .25rem .8125rem;
+                    justify-self: flex-end;
+                    border-style: none;
+                    background-color: #ffffff;
+
+                    &#grid-button.active, &#list-button.active {
+                        background-color: #D9D9D9;
+                        border-radius: 0.3rem;
+                    }
+    
+                    &:hover, &:active, &:focus {
+                        background-color: #D9D9D9;
+                        border-radius: 0.3rem;
+                    }
+                }
             }
         }
 
+        hr {
+            height: .1875rem;
+            background: #101920;
+            margin-bottom: 2.375rem;
+        }
+
         .upcoming-events {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .artist-box {
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-basis: calc(33.33% - 2.1875rem);
+                height: 32.25rem;
+                margin-bottom: 2.25rem;
+                border-radius: .3125rem;
+                box-shadow: 0rem .25rem 3.125rem 0rem rgba(0, 0, 0, 0.25);
+
+                //Sets margin between artist-box containers, leaving off the third one in the column.
+                &:not(:nth-child(3n)) {
+                    margin-right: 2.1875rem;
+                }
+
+                .artist-photo {
+                    //width: 26.1875rem;
+                    //height: 22.1875rem;
+
+                    img {
+                        //width: 100%;
+                        //height: 100%;
+                        border-radius: .3125rem;
+                    }
+                }
+
+                .event-details {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    background-color: #101920;
+                    width: 100%;
+                    height: 2.125rem;
+                    margin-top: -2rem;
+                    position: relative;
+
+                    .date {
+                        display: flex;
+                        color: #00B2FF;
+
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-left: 1.0938rem;
+                        }
+                    }
+
+                    .day-of-week {
+                        display: flex;
+                        justify-content: flex-end;
+                        color: #101920;
+                        background-image: url('../assets/images/day_of_week_rectangle.svg');
+                        background-repeat: no;
+                        background-size: cover;
+                        width: 7.625rem;
+                        height: 2.5rem;
+                        position: absolute;
+                        top: -0.875rem;
+                        right: 0;
+                        z-index: 1;
+
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 6.1126rem;
+                        }
+                    }
+                }
+
+                .artist-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p.artist-name {
+                        color: 000;
+                        font-size: 1.875rem;
+                        font-weight: 700;
+                        letter-spacing: .0281rem;
+                        margin-top: 1.625rem;
+                        margin-bottom: 0;
+                    }
+    
+                    p.tour-name {
+                        color: 000;
+                        font-family: Helvetica;
+                        font-size: 20px;
+                        font-weight: 400;
+                        letter-spacing: .0187rem;
+                        text-transform: capitalize;
+                        margin-top: .3125rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        height: 30rem;
+        margin-top: .625rem;
+
+        .newsletter-bg-image {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            .bg-color {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #00B2FF;
+                mix-blend-mode: multiply;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .newsletter-signup-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                width: 80%;
+                padding: 2.6875rem 7.875rem;
+                background: rgba(0, 0, 0, 0.75);
+                color: #ffffff;
+
+                .newsletter-box-content {
+                    
+                }
+            }
         }
     }
 
