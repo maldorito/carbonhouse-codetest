@@ -4,6 +4,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <script src="src/index.js" defer></script>
     </head>
     <body>
         <section class="header">
@@ -11,25 +12,25 @@
                 <div class="social">
                     <p>Get Connected</p>
                     <div class="social-icons">
-                        <img src="assets/images/Instagram.svg" alt="Instagram">
-                        <img src="assets/images/Twitter.svg" alt="Twitter">
-                        <img src="assets/images/Facebook.svg" alt="Facebook">
-                        <img src="assets/images/Youtube.svg" alt="Youtube">
+                        <img src="assets/images/icons/Instagram.svg" alt="Instagram">
+                        <img src="assets/images/icons/Twitter.svg" alt="Twitter">
+                        <img src="assets/images/icons/Facebook.svg" alt="Facebook">
+                        <img src="assets/images/icons/Youtube.svg" alt="Youtube">
                     </div>
                 </div>
                 <div class="search-bar">
                     <input type="text" placeholder="Search Events">
                     <button type="submit" class="search-button">
-                        <img src="assets/images/Search.svg" alt="Search">
+                        <img src="assets/images/icons/Search.svg" alt="Search">
                     </button>
                 </div>
                 <div class="login-button">
                     <p>Login</p>
-                    <img src="assets/images/Profile.svg" alt="Profile">
+                    <img src="assets/images/icons/Profile.svg" alt="Profile">
                 </div>
             </section>
             <section class="menu-bar">
-                <a href="#" alt="Home"><img src="assets/images/ch_venue_logo.svg"></a>
+                <a href="#" alt="Home"><img src="assets/images/ch_venue_logo.svg" alt=""></a>
                 <a href="#" alt="Tickets">Tickets</a>
                 <a href="#" alt="Plan Your Visits">Plan Your Visits</a>
                 <a href="#" alt="VIP Members">Vip Members</a>
@@ -38,15 +39,107 @@
         </section>
         <section class="content">
             <section class="upcoming-events-bar">
-                <h1>Upcoming Events</h1>
-                
+                <div class="events-bar-title">
+                    <h1>Upcoming Events</h1>
+                </div>
+                <div class="events-bar-buttons">
+                    <button class="events-bar-button" id="grid-button"><img src="assets/images/icons/Grid.svg" alt="Grid View Button"></button>
+                    <button class="events-bar-button" id="list-button"><img src="assets/images/icons/List.svg" alt="List View Button"></button>
+                </div>
             </section>
             <hr>
             <section class="upcoming-events">
-
+                <div class="artist-box">
+                    <div class="artist-photo">
+                        <img src="assets/images/artists/the_weeknd.jpg" alt="The Weekend Photo">
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>July 28, 2023</p></div>
+                        <div class="day-of-week"><p>Friday</p></div>
+                    </div>
+                    <div class="artist-info">
+                        <p class="artist-name">The Weeknd</p>
+                        <p class="tour-name">After Hours Tour</p>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-photo">
+                        <img src="assets/images/artists/bts.jpg" alt="BTS Photo">
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>July 30, 2023</p></div>
+                        <div class="day-of-week"><p>Sunday</p></div>
+                    </div>
+                    <div class="artist-info">
+                        <p class="artist-name">Bts</p>
+                        <p class="tour-name">Map of the soul tour</p>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-photo">
+                        <img src="assets/images/artists/dua_lipa.jpg" alt="Dua Lipa Photo">
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>August 12, 2023</p></div>
+                        <div class="day-of-week"><p>Saturday</p></div>
+                    </div>
+                    <div class="artist-info">
+                        <p class="artist-name">Dua Lipa</p>
+                        <p class="tour-name">Future Nostalgia Tour</p>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-photo">
+                        <img src="assets/images/artists/lady_gaga.jpg" alt="Lady Gaga Photo">
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>August 18, 2023</p></div>
+                        <div class="day-of-week"><p>Friday</p></div>
+                    </div>
+                    <div class="artist-info">
+                        <p class="artist-name">lady gaga</p>
+                        <p class="tour-name">The chromatica BALL</p>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-photo">
+                        <img src="assets/images/artists/harry_styles.jpg" alt="Harry Styles Photo">
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>august 29, 2023</p></div>
+                        <div class="day-of-week"><p>tuesday</p></div>
+                    </div>
+                    <div class="artist-info">
+                        <p class="artist-name">Harry Styles</p>
+                        <p class="tour-name">After Hours Tour</p>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-photo">
+                        <img src="assets/images/artists/taylor_swift.jpg" alt="Taylor Swift Photo">
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>september 01, 2023</p></div>
+                        <div class="day-of-week"><p>friday</p></div>
+                    </div>
+                    <div class="artist-info">
+                        <p class="artist-name">Taylor swift</p>
+                        <p class="tour-name">Eras Tour</p>
+                    </div>
+                </div>
             </section>
             <section class="newsletter">
-            Newsletter
+                <div class="newsletter-bg-image">
+                    <div class="bg-color"></div>
+                    <img src="assets/images/newsletter_bg.jpg" alt="Newsletter Background Image">
+                    <div class="newsletter-signup-box">
+                        <div class="newsletter-box-content">
+                            <p>Newsletter Signup</p>
+                            <p>Stay updated on the best concerts and most hip hop events</p>
+                            <button><p>Get Connected</p></button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
         <section class="footer">
