@@ -416,7 +416,7 @@
   body footer .footer-social .social-tabs .social-feed-view #twitter .feed-view-header .arrows img, body footer .footer-social .social-tabs .social-feed-view #instagram .feed-view-header .arrows img, body footer .footer-social .social-tabs .social-feed-view #facebook .feed-view-header .arrows img {
     cursor: pointer;
   }
-  body footer .footer-social .social-tabs .social-feed-view #twitter .feed-view-header .arrows img#arrow-left, body footer .footer-social .social-tabs .social-feed-view #instagram .feed-view-header .arrows img#arrow-left, body footer .footer-social .social-tabs .social-feed-view #facebook .feed-view-header .arrows img#arrow-left {
+  body footer .footer-social .social-tabs .social-feed-view #twitter .feed-view-header .arrows img.arrow-left, body footer .footer-social .social-tabs .social-feed-view #instagram .feed-view-header .arrows img.arrow-left, body footer .footer-social .social-tabs .social-feed-view #facebook .feed-view-header .arrows img.arrow-left {
     margin-right: 0.8125rem;
   }
   body footer .footer-social .social-tabs .social-feed-view #twitter .social-feed-cards, body footer .footer-social .social-tabs .social-feed-view #instagram .social-feed-cards, body footer .footer-social .social-tabs .social-feed-view #facebook .social-feed-cards {
@@ -1098,7 +1098,7 @@
   body footer .footer-social .social-tabs .social-feed-view #twitter .feed-view-header .arrows img, body footer .footer-social .social-tabs .social-feed-view #instagram .feed-view-header .arrows img, body footer .footer-social .social-tabs .social-feed-view #facebook .feed-view-header .arrows img {
     cursor: pointer;
   }
-  body footer .footer-social .social-tabs .social-feed-view #twitter .feed-view-header .arrows img#arrow-left, body footer .footer-social .social-tabs .social-feed-view #instagram .feed-view-header .arrows img#arrow-left, body footer .footer-social .social-tabs .social-feed-view #facebook .feed-view-header .arrows img#arrow-left {
+  body footer .footer-social .social-tabs .social-feed-view #twitter .feed-view-header .arrows img.arrow-left, body footer .footer-social .social-tabs .social-feed-view #instagram .feed-view-header .arrows img.arrow-left, body footer .footer-social .social-tabs .social-feed-view #facebook .feed-view-header .arrows img.arrow-left {
     margin-right: 0.8125rem;
   }
   body footer .footer-social .social-tabs .social-feed-view #twitter .social-feed-cards, body footer .footer-social .social-tabs .social-feed-view #instagram .social-feed-cards, body footer .footer-social .social-tabs .social-feed-view #facebook .social-feed-cards {
