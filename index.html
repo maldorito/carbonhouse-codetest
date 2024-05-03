@@ -8,9 +8,9 @@
     </head>
     <body>
         <header>
-            <section class="header-bar">
+            <section class="header-bar hide-on-mobile">
                 <div class="social">
-                    <p>Get Connected</p>
+                    <p id="get-connected">Get Connected</p>
                     <div class="social-icons">
                         <img src="assets/images/icons/Instagram.svg" alt="Instagram">
                         <img src="assets/images/icons/Twitter.svg" alt="Twitter">
@@ -29,38 +29,36 @@
                     <img src="assets/images/icons/Profile.svg" alt="Profile">
                 </div>
             </section>
-            <nav>
+            <nav class="show-on-mobile">
+                <ul class="menu">
+                    <li class="site-logo">
+                        <a href="#" alt="Home">
+                            <img class="show-on-mobile" src="assets/images/icons/CH VENUE_mobile.svg">
+                        </a>
+                    </li>
+                </ul>
+                <div class="collapsible-container">
+                    <div class="collapsible-box">
+                        <ul>
+                            <li><a href="#" alt="Tickets"><span>Tickets &rarr;</span></a></li>
+                            <li><a href="#" alt="Plan Your Visits"><span>Plan Your Visits &rarr;</span></a></li>
+                            <li><a href="#" alt="VIP Members"><span>Vip Members &rarr;</span></a></li>
+                            <li><a href="#" alt="About Us"><span>About Us &rarr;</span></a></li>
+                            <li><a href="#" alt="Login"><span>Login &rarr;</span></a></li>
+                            <li><a href="#" alt="Search"><span>Search &#x1F50D;</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <img src="assets/images/icons/menu.svg">
+                </div>
+            </nav>
+            <nav class="hide-on-mobile">
                 <ul>
                     <li class="site-logo">
                         <a href="#" alt="Home">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="225" height="50" viewBox="0 0 225 50" fill="none">
-                                    <mask id="path-1-outside-1_1_186" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="50" fill="black">
-                                        <rect fill="white" width="225" height="50"/>
-                                        <path d="M14.1727 48.5364C10.7745 48.5364 8.10182 47.8682 6.15455 46.5318C4.24545 45.1955 2.90909 43.3818 2.14545 41.0909C1.38182 38.7618 1 36.0891 1 33.0727V16.5209C1 13.3518 1.38182 10.6027 2.14545 8.27364C2.90909 5.94455 4.24545 4.15 6.15455 2.89C8.10182 1.63 10.7745 1 14.1727 1C17.38 1 19.8809 1.55364 21.6755 2.66091C23.5082 3.73 24.8064 5.27637 25.57 7.3C26.3336 9.32364 26.7155 11.6718 26.7155 14.3445V18.2391H18.5827V14.23C18.5827 12.9318 18.5064 11.7482 18.3536 10.6791C18.2391 9.61 17.8764 8.77 17.2655 8.15909C16.6927 7.51 15.6809 7.18546 14.23 7.18546C12.7791 7.18546 11.71 7.52909 11.0227 8.21637C10.3736 8.86546 9.95364 9.76273 9.76273 10.9082C9.57182 12.0155 9.47636 13.2755 9.47636 14.6882V34.8482C9.47636 36.5282 9.61 37.9218 9.87727 39.0291C10.1445 40.0982 10.6218 40.9191 11.3091 41.4918C12.0345 42.0264 13.0082 42.2936 14.23 42.2936C15.6427 42.2936 16.6355 41.9691 17.2082 41.32C17.8191 40.6327 18.2009 39.7355 18.3536 38.6282C18.5064 37.5209 18.5827 36.28 18.5827 34.9055V30.7245H26.7155V34.4473C26.7155 37.1964 26.3527 39.64 25.6273 41.7782C24.9018 43.8782 23.6227 45.5391 21.79 46.7609C19.9955 47.9445 17.4564 48.5364 14.1727 48.5364Z"/>
-                                        <path d="M33.5904 47.9064V1.51545H42.0095V20.9309H51.4595V1.51545H59.9359V47.9064H51.4595V26.9445H42.0095V47.9064H33.5904Z"/>
-                                        <path d="M89.7808 47.9064L80.4453 1.51545H87.9481L94.0762 34.3327L99.8035 1.51545H107.478L98.1426 47.9064H89.7808Z"/>
-                                        <path d="M113.069 47.9064V1.51545H132.542V7.47182H121.546V20.8164H130.194V26.7155H121.546V42.0645H132.657V47.9064H113.069Z"/>
-                                        <path d="M138.426 47.9064V1.51545H144.325L155.608 27.9755V1.51545H162.595V47.9064H156.982L145.642 20.1864V47.9064H138.426Z"/>
-                                        <path d="M183.209 48.5364C179.772 48.5364 177.1 47.9064 175.191 46.6464C173.281 45.3864 171.964 43.5918 171.239 41.2627C170.513 38.9336 170.151 36.1464 170.151 32.9009V1.51545H178.398V33.8745C178.398 35.3255 178.493 36.7 178.684 37.9982C178.875 39.2582 179.314 40.2891 180.001 41.0909C180.727 41.8545 181.796 42.2364 183.209 42.2364C184.698 42.2364 185.767 41.8545 186.416 41.0909C187.103 40.2891 187.542 39.2582 187.733 37.9982C187.962 36.7 188.077 35.3255 188.077 33.8745V1.51545H196.267V32.9009C196.267 36.1464 195.904 38.9336 195.179 41.2627C194.453 43.5918 193.136 45.3864 191.227 46.6464C189.356 47.9064 186.683 48.5364 183.209 48.5364Z"/>
-                                        <path d="M203.793 47.9064V1.51545H223.266V7.47182H212.269V20.8164H220.917V26.7155H212.269V42.0645H223.38V47.9064H203.793Z"/>
-                                    </mask>
-                                    <path d="M14.1727 48.5364C10.7745 48.5364 8.10182 47.8682 6.15455 46.5318C4.24545 45.1955 2.90909 43.3818 2.14545 41.0909C1.38182 38.7618 1 36.0891 1 33.0727V16.5209C1 13.3518 1.38182 10.6027 2.14545 8.27364C2.90909 5.94455 4.24545 4.15 6.15455 2.89C8.10182 1.63 10.7745 1 14.1727 1C17.38 1 19.8809 1.55364 21.6755 2.66091C23.5082 3.73 24.8064 5.27637 25.57 7.3C26.3336 9.32364 26.7155 11.6718 26.7155 14.3445V18.2391H18.5827V14.23C18.5827 12.9318 18.5064 11.7482 18.3536 10.6791C18.2391 9.61 17.8764 8.77 17.2655 8.15909C16.6927 7.51 15.6809 7.18546 14.23 7.18546C12.7791 7.18546 11.71 7.52909 11.0227 8.21637C10.3736 8.86546 9.95364 9.76273 9.76273 10.9082C9.57182 12.0155 9.47636 13.2755 9.47636 14.6882V34.8482C9.47636 36.5282 9.61 37.9218 9.87727 39.0291C10.1445 40.0982 10.6218 40.9191 11.3091 41.4918C12.0345 42.0264 13.0082 42.2936 14.23 42.2936C15.6427 42.2936 16.6355 41.9691 17.2082 41.32C17.8191 40.6327 18.2009 39.7355 18.3536 38.6282C18.5064 37.5209 18.5827 36.28 18.5827 34.9055V30.7245H26.7155V34.4473C26.7155 37.1964 26.3527 39.64 25.6273 41.7782C24.9018 43.8782 23.6227 45.5391 21.79 46.7609C19.9955 47.9445 17.4564 48.5364 14.1727 48.5364Z" fill="white"/>
-                                    <path d="M33.5904 47.9064V1.51545H42.0095V20.9309H51.4595V1.51545H59.9359V47.9064H51.4595V26.9445H42.0095V47.9064H33.5904Z" fill="white"/>
-                                    <path d="M89.7808 47.9064L80.4453 1.51545H87.9481L94.0762 34.3327L99.8035 1.51545H107.478L98.1426 47.9064H89.7808Z" fill="white"/>
-                                    <path d="M113.069 47.9064V1.51545H132.542V7.47182H121.546V20.8164H130.194V26.7155H121.546V42.0645H132.657V47.9064H113.069Z" fill="white"/>
-                                    <path d="M138.426 47.9064V1.51545H144.325L155.608 27.9755V1.51545H162.595V47.9064H156.982L145.642 20.1864V47.9064H138.426Z" fill="white"/>
-                                    <path d="M183.209 48.5364C179.772 48.5364 177.1 47.9064 175.191 46.6464C173.281 45.3864 171.964 43.5918 171.239 41.2627C170.513 38.9336 170.151 36.1464 170.151 32.9009V1.51545H178.398V33.8745C178.398 35.3255 178.493 36.7 178.684 37.9982C178.875 39.2582 179.314 40.2891 180.001 41.0909C180.727 41.8545 181.796 42.2364 183.209 42.2364C184.698 42.2364 185.767 41.8545 186.416 41.0909C187.103 40.2891 187.542 39.2582 187.733 37.9982C187.962 36.7 188.077 35.3255 188.077 33.8745V1.51545H196.267V32.9009C196.267 36.1464 195.904 38.9336 195.179 41.2627C194.453 43.5918 193.136 45.3864 191.227 46.6464C189.356 47.9064 186.683 48.5364 183.209 48.5364Z" fill="white"/>
-                                    <path d="M203.793 47.9064V1.51545H223.266V7.47182H212.269V20.8164H220.917V26.7155H212.269V42.0645H223.38V47.9064H203.793Z" fill="white"/>
-                                    <path d="M14.1727 48.5364C10.7745 48.5364 8.10182 47.8682 6.15455 46.5318C4.24545 45.1955 2.90909 43.3818 2.14545 41.0909C1.38182 38.7618 1 36.0891 1 33.0727V16.5209C1 13.3518 1.38182 10.6027 2.14545 8.27364C2.90909 5.94455 4.24545 4.15 6.15455 2.89C8.10182 1.63 10.7745 1 14.1727 1C17.38 1 19.8809 1.55364 21.6755 2.66091C23.5082 3.73 24.8064 5.27637 25.57 7.3C26.3336 9.32364 26.7155 11.6718 26.7155 14.3445V18.2391H18.5827V14.23C18.5827 12.9318 18.5064 11.7482 18.3536 10.6791C18.2391 9.61 17.8764 8.77 17.2655 8.15909C16.6927 7.51 15.6809 7.18546 14.23 7.18546C12.7791 7.18546 11.71 7.52909 11.0227 8.21637C10.3736 8.86546 9.95364 9.76273 9.76273 10.9082C9.57182 12.0155 9.47636 13.2755 9.47636 14.6882V34.8482C9.47636 36.5282 9.61 37.9218 9.87727 39.0291C10.1445 40.0982 10.6218 40.9191 11.3091 41.4918C12.0345 42.0264 13.0082 42.2936 14.23 42.2936C15.6427 42.2936 16.6355 41.9691 17.2082 41.32C17.8191 40.6327 18.2009 39.7355 18.3536 38.6282C18.5064 37.5209 18.5827 36.28 18.5827 34.9055V30.7245H26.7155V34.4473C26.7155 37.1964 26.3527 39.64 25.6273 41.7782C24.9018 43.8782 23.6227 45.5391 21.79 46.7609C19.9955 47.9445 17.4564 48.5364 14.1727 48.5364Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                    <path d="M33.5904 47.9064V1.51545H42.0095V20.9309H51.4595V1.51545H59.9359V47.9064H51.4595V26.9445H42.0095V47.9064H33.5904Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                    <path d="M89.7808 47.9064L80.4453 1.51545H87.9481L94.0762 34.3327L99.8035 1.51545H107.478L98.1426 47.9064H89.7808Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                    <path d="M113.069 47.9064V1.51545H132.542V7.47182H121.546V20.8164H130.194V26.7155H121.546V42.0645H132.657V47.9064H113.069Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                    <path d="M138.426 47.9064V1.51545H144.325L155.608 27.9755V1.51545H162.595V47.9064H156.982L145.642 20.1864V47.9064H138.426Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                    <path d="M183.209 48.5364C179.772 48.5364 177.1 47.9064 175.191 46.6464C173.281 45.3864 171.964 43.5918 171.239 41.2627C170.513 38.9336 170.151 36.1464 170.151 32.9009V1.51545H178.398V33.8745C178.398 35.3255 178.493 36.7 178.684 37.9982C178.875 39.2582 179.314 40.2891 180.001 41.0909C180.727 41.8545 181.796 42.2364 183.209 42.2364C184.698 42.2364 185.767 41.8545 186.416 41.0909C187.103 40.2891 187.542 39.2582 187.733 37.9982C187.962 36.7 188.077 35.3255 188.077 33.8745V1.51545H196.267V32.9009C196.267 36.1464 195.904 38.9336 195.179 41.2627C194.453 43.5918 193.136 45.3864 191.227 46.6464C189.356 47.9064 186.683 48.5364 183.209 48.5364Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                    <path d="M203.793 47.9064V1.51545H223.266V7.47182H212.269V20.8164H220.917V26.7155H212.269V42.0645H223.38V47.9064H203.793Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1_1_186)"/>
-                                </svg>
-                            </span>
+                            <img class="mobile-logo" src="assets/images/icons/CH VENUE_mobile.svg">
+                            <img class="desktop-logo" src="assets/images/icons/CH VENUE.svg">
                         </a>
                     </li>
                     <li><a href="#" alt="Tickets"><span>Tickets</span></a></li>
@@ -75,13 +73,123 @@
                 <div class="events-bar-title">
                     <h1>Upcoming Events</h1>
                 </div>
-                <div class="events-bar-buttons">
+                <div class="events-bar-buttons hide-on-mobile">
                     <button class="events-bar-button" id="grid-button"><img src="assets/images/icons/Grid.svg" alt="Grid View Button"></button>
                     <button class="events-bar-button" id="list-button"><img src="assets/images/icons/List.svg" alt="List View Button"></button>
                 </div>
             </section>
             <hr>
-            <section class="upcoming-events">
+            <section class="upcoming-events-mobile show-on-mobile">
+                <div class="artist-box">
+                    <div class="artist-box-top">
+                        <div class="artist-photo">
+                            <img src="assets/images/artists/the_weeknd.jpg" alt="The Weekend Photo">
+                        </div>
+                        <div class="artist-info">
+                            <p class="artist-name">The Weeknd</p>
+                            <p class="tour-name">After Hours Tour</p>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>July 28, 2023</p></div>
+                        <div class="day-of-week"><p>Friday</p></div>
+                    </div>
+                    <div class="ticket-link">
+                        <img src="assets/images/icons/Ticket.svg"><span>Buy Tickets</span>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-box-top">
+                        <div class="artist-photo">
+                            <img src="assets/images/artists/bts.jpg" alt="BTS Photo">
+                        </div>
+                        <div class="artist-info">
+                            <p class="artist-name">Bts</p>
+                            <p class="tour-name">Map of the soul tour</p>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>July 30, 2023</p></div>
+                        <div class="day-of-week"><p>Sunday</p></div>
+                    </div>
+                    <div class="ticket-link">
+                        <img src="assets/images/icons/Ticket.svg"><span>Buy Tickets</span>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-box-top">
+                        <div class="artist-photo">
+                            <img src="assets/images/artists/dua_lipa.jpg" alt="Dua Lipa Photo">
+                        </div>
+                        <div class="artist-info">
+                            <p class="artist-name">Dua Lipa</p>
+                            <p class="tour-name">Future Nostalgia Tour</p>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>August 12, 2023</p></div>
+                        <div class="day-of-week"><p>Saturday</p></div>
+                    </div>
+                    <div class="ticket-link">
+                        <img src="assets/images/icons/Ticket.svg"><span>Buy Tickets</span>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-box-top">
+                        <div class="artist-photo">
+                            <img src="assets/images/artists/lady_gaga.jpg" alt="Lady Gaga Photo">
+                        </div>
+                        <div class="artist-info">
+                            <p class="artist-name">lady gaga</p>
+                            <p class="tour-name">The chromatica ball</p>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>August 18, 2023</p></div>
+                        <div class="day-of-week"><p>Friday</p></div>
+                    </div>
+                    <div class="ticket-link">
+                        <img src="assets/images/icons/Ticket.svg"><span>Buy Tickets</span>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-box-top">
+                        <div class="artist-photo">
+                            <img src="assets/images/artists/harry_styles.jpg" alt="Harry Styles Photo">
+                        </div>
+                        <div class="artist-info">
+                            <p class="artist-name">Harry Styles</p>
+                            <p class="tour-name">Love On Tour</p>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>august 29, 2023</p></div>
+                        <div class="day-of-week"><p>tuesday</p></div>
+                    </div>
+                    <div class="ticket-link">
+                        <img src="assets/images/icons/Ticket.svg"><span>Buy Tickets</span>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-box-top">
+                        <div class="artist-photo">
+                            <img src="assets/images/artists/taylor_swift.jpg" alt="Taylor Swift Photo">
+                        </div>
+                        <div class="artist-info">
+                            <p class="artist-name">Taylor swift</p>
+                            <p class="tour-name">Eras Tour</p>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <div class="date"><p>september 01, 2023</p></div>
+                        <div class="day-of-week"><p>friday</p></div>
+                    </div>
+                    <div class="ticket-link">
+                        <img src="assets/images/icons/Ticket.svg"><span>Buy Tickets</span>
+                    </div>
+                </div>
+            </section>
+            <section class="upcoming-events hide-on-mobile">
                 <div class="artist-box">
                     <div class="artist-photo">
                         <img src="assets/images/artists/the_weeknd.jpg" alt="The Weekend Photo">
@@ -179,10 +287,219 @@
             <div class="footer-social">
                 <p>Get Social</p>
                 <p>Stay Connected Wherever You Are!</p>
+                <div class="social-tabs">
+                    <div class="social-button-row">
+                        <button class="tab-button" id="twitter-button" data-tab="twitter"><img src="assets/images/icons/twitter_footer.svg" alt="Twitter"><span>Twitter</span></button>
+                        <button class="tab-button" id="instagram-button" data-tab="instagram"><img src="assets/images/icons/instagram_footer.svg" alt="Instagram"><span>Instagram</span></button>
+                        <button class="tab-button" id="facebook-button" data-tab="facebook"><img src="assets/images/icons/facebook_footer.svg" alt="Facebook"><span>Facebook</span></button>
+                    </div>
+                    <div class="social-feed-view">
+                        <div id="twitter" class="tab-pane">
+                            <div class="feed-view-header">
+                                <div class="follow-message">
+                                    <p>Follow <span>@Chvenue</span></p>
+                                </div>
+                                <div class="arrows">
+                                    <img src="assets/images/icons/Arrow Left.svg" id="arrow-left" alt="Arrow Left">
+                                    <img src="assets/images/icons/Arrow Right.svg" alt="Arrow Right">
+                                </div>
+                            </div>
+                            <div class="social-feed-cards">
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/twitter_footer.svg" alt="Twitter">
+                                            <span>@ Chvenue</span>
+                                        </div>
+                                        <div class="tweet">
+                                            <p>Catch unforgettable music moments at <span>@acllive</span> and <span>@3TENaustin</span> in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! <span>#ACLLive</span> <span>#3TENACLLive</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>8:14 PM / 3 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/twitter_footer.svg" alt="Twitter">
+                                            <span>@ Chvenue</span>
+                                        </div>
+                                        <div class="tweet">
+                                            <p>Tickets for <span>@Thundercat's</span> In Yo Girl's City Tour go on sale tomorrow, 5/5 @ 10 am local time!! Get yours here http://go.axs.com/RzaC50OfofF</p>
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>7:35 PM / 2 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/twitter_footer.svg" alt="Twitter">
+                                            <span>@ Chvenue</span>
+                                        </div>
+                                        <div class="tweet">
+                                            <p>Tickets for <span>@derekhough's</span> Symphony of Dance Tour go on sale this Friday, 4/28 @ 10 am local time!! Get yours here http://go.axs.com/Gzzi50NRXYl</p>
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>9:08 AM / 1 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="instagram" class="tab-pane">
+                            <div class="feed-view-header">
+                                <div class="follow-message">
+                                    <p>Follow <span>Chvenue_insta</span></p>
+                                </div>
+                                <div class="arrows">
+                                    <img src="assets/images/icons/Arrow Left.svg" id="arrow-left" alt="Arrow Left">
+                                    <img src="assets/images/icons/Arrow Right.svg" alt="Arrow Right">
+                                </div>
+                            </div>
+                            <div class="social-feed-cards">
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/instagram_footer.svg" alt="Twitter">
+                                            <span>@ Chvenue_insta</span>
+                                        </div>
+                                        <div class="instagram-post">
+                                            <img src="assets/images/artists/bts.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>8:14 PM / 3 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/instagram_footer.svg" alt="Twitter">
+                                            <span>@ Chvenue_insta</span>
+                                        </div>
+                                        <div class="instagram-post">
+                                            <img src="assets/images/artists/lady_gaga.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>7:35 PM / 2 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/instagram_footer.svg" alt="Twitter">
+                                            <span>@ Chvenue_insta</span>
+                                        </div>
+                                        <div class="instagram-post">
+                                            <img src="assets/images/artists/the_weeknd.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>9:08 AM / 1 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="facebook" class="tab-pane">
+                            <div class="feed-view-header">
+                                <div class="follow-message">
+                                    <p>Follow <span>Chvenue</span> on Facebook</p>
+                                </div>
+                                <div class="arrows">
+                                    <img src="assets/images/icons/Arrow Left.svg" id="arrow-left" alt="Arrow Left">
+                                    <img src="assets/images/icons/Arrow Right.svg" alt="Arrow Right">
+                                </div>
+                            </div>
+                            <div class="social-feed-cards">
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/facebook_footer.svg" alt="Twitter">
+                                            <span>Chvenue</span>
+                                        </div>
+                                        <div class="tweet">
+                                            <p>Catch unforgettable music moments at <span>@acllive</span> and <span>@3TENaustin</span> in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! <span>#ACLLive</span> <span>#3TENACLLive</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>8:14 PM / 3 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/facebook_footer.svg" alt="Twitter">
+                                            <span>Chvenue</span>
+                                        </div>
+                                        <div class="tweet">
+                                            <p>Tickets for <span>@Thundercat's</span> In Yo Girl's City Tour go on sale tomorrow, 5/5 @ 10 am local time!! Get yours here http://go.axs.com/RzaC50OfofF</p>
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>7:35 PM / 2 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                                <div class="feed-view-content">
+                                    <div class="feed-content-top">
+                                        <div class="username">
+                                            <img src="assets/images/icons/facebook_footer.svg" alt="Twitter">
+                                            <span>Chvenue</span>
+                                        </div>
+                                        <div class="tweet">
+                                            <p>Tickets for <span>@derekhough's</span> Symphony of Dance Tour go on sale this Friday, 4/28 @ 10 am local time!! Get yours here http://go.axs.com/Gzzi50NRXYl</p>
+                                        </div>
+                                    </div>
+                                    <div class="feed-content-bottom">
+                                        <p>9:08 AM / 1 APR 2023</p>
+                                        <img src="assets/images/icons/Comment.svg" alt="Comment">
+                                        <img src="assets/images/icons/Retweet.svg" alt="Retweet">
+                                        <img src="assets/images/icons/Like.svg" alt="Like">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer-map">
                 <p>Get Directions</p>
                 <p>Map Out Your Trip!</p>
+                <div class="map-box">
+                    <div class="map-address">
+                        <p>ADDRESS: 5727 WESTPARK DRIVE. 108, CHARLOTTE, NC 28217</p>
+                    </div>
+                    <div class="map-view">
+                        <img src="assets/images/Mapsicle Map.svg" alt="Map Image">
+                    </div>
+                </div>
             </div>
         </footer>
     </body>
